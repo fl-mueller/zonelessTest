@@ -1,20 +1,7 @@
-<div id="content">
-  {{content}}
-</div>
-<div id="signalContent">
-  {{signalContent()}}
-</div>
-<div id="counter">
-  App counter: {{clickCounter}}
-</div>
-<button id="counterBtn" type="button" (click)="onClick($event)">App Click template binding</button>
-<button #rendererCounterBtn id="rendererCounterBtn" type="button">App Click listener</button>
-
-<app-child></app-child>
-
 <app-host>
-  <ng-template #template let-context>
+  <ng-template #template>
     <app-child></app-child>
   </ng-template>
+  <app-child></app-child>
 </app-host>
 

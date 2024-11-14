@@ -26,6 +26,7 @@ export class ChildComponent implements AfterViewInit{
   buttonRef?: ElementRef<HTMLButtonElement>
 
   ngAfterViewInit(): void {
+    // rely on zone.js to trigger change detection
     this.renderer.listen(this.buttonRef!.nativeElement, 'click', () => {
       this.clickCounter++;
     })

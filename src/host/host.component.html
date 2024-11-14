@@ -1,12 +1,12 @@
 
-<!--<app-child></app-child>-->
 
 
-  <ng-container *ngTemplateOutlet="template || defaultTemplate; context: { $implicit: clickCounter}"></ng-container>
-
-<button #clickCounterBtn type="button" ></button>
-<span>{{clickCounter}}</span>
+<h2>Template outlet</h2>
+<ng-container *ngTemplateOutlet="template || defaultTemplate"></ng-container>
 
 <ng-template #defaultTemplate>
   <span>Default</span>
 </ng-template>
+
+<h2>Projected Content</h2>
+<ng-content></ng-content>
