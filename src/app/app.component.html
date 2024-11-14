@@ -10,11 +10,4 @@
 <button id="counterBtn" type="button" (click)="onClick($event)">App Click template binding</button>
 <button #rendererCounterBtn id="rendererCounterBtn" type="button">App Click listener</button>
 
-<app-child></app-child>
-
-<app-host>
-  <ng-template #template let-context>
-    <app-child></app-child>
-  </ng-template>
-</app-host>
 
